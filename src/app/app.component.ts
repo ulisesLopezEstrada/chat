@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ChatService } from './servicios/chat.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  date =  new Date();
+  constructor(public charServicio:ChatService){
+   }
+
+   salir(){
+     this.charServicio.logout();
+   }
 }

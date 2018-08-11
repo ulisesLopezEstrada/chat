@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>Consulta de Base de datos</h1>
+  <ul *ngFor="let item of baseServicio.items | async">
+    <li>
+      Nombre: {{ item.nombre}} email: {{item.email}}
+    </li>
+  </ul>
+
+</div>

@@ -1,0 +1,9 @@
+<div class="container">
+  <input type="text" name ="nombre"
+  [(ngModel)]="nombre"  class="form-control" placeholder="Nombre">
+  
+  <input type="email" name ="email"
+  [(ngModel)]="email" class="form-control" placeholder="Correo">
+ 
+   <button (click)="insertar(nombre,email)" class="btn btn-primary">Insertar</button>
+</div>
